@@ -13,11 +13,11 @@
     <form action="#">
       <h2>ورود</h2>
       <div class="input-field">
-        <input type="text" required>
+        <input class="username" type="text" required>
         <label>ایمیل خود را وارد کنید</label>
       </div>
       <div class="input-field">
-        <input type="password" required>
+        <input class="password" type="password" required>
         <label>پسورد خود را وارد کنید</label>
       </div>
       <div class="forget">
@@ -27,11 +27,15 @@
         </label>
         <a href="#">فراموشی رمز عبور</a>
       </div>
-      <button type="submit">ورود</button>
+      <button onclick="dataValidation()" type="submit">ورود</button>
       <div class="register">
         <a href="#">ساخت اکانت جدید</a>
       </div>
     </form>
+  </div>
+
+  <div class="modal">
+    لطفا اطلاعات لازم را به درستی وارد کنید
   </div>
 
   <script src="app.js"></script>
