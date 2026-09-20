@@ -11,13 +11,15 @@
 <body>
   <div class="wrapper">
     <form action="#">
-      <h2>ورود</h2>
+      <h2>فرم ورود</h2>
       <div class="input-field">
-        <input class="username" type="text" required>
+        <input class="username" type="text" required onkeydown="usernameValidation()">
+        <span class="username-validation">باید 12 کاراکتر یا بیشتر باشد</span>
         <label>ایمیل خود را وارد کنید</label>
       </div>
       <div class="input-field">
-        <input class="password" type="password" required>
+        <input class="password" type="password" required onkeydown="passwordValidation()">
+        <span class="password-validation">باید 8 کاراکتر یا بیشتر باشد</span>
         <label>پسورد خود را وارد کنید</label>
       </div>
       <div class="forget">

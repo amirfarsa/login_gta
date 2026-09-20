@@ -174,3 +174,7 @@ button:hover {
     -o-transition: all 1s linear;
 }
 
+.username-validation,.password-validation {
+    color: red;
+    display: none;
+}
