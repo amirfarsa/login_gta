@@ -90,10 +90,11 @@ h2 {
 
 .input-field input:focus~label,
 .input-field input:valid~label {
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
   top: 10px;
+  left: 85px;
   transform: translateY(-150%);
-  color: #ffdde1;
+  /* color: #ffdde1; */
 }
 
 .forget {
@@ -165,8 +166,8 @@ button:hover {
     font-weight: bold;
     position: absolute;
     z-index: 999;
-    right: 10px;
-    top: 10px;
+    right: auto;
+    top: 120px;
     transition: all 1s linear;
     -webkit-transition: all 1s linear;
     -moz-transition: all 1s linear;
@@ -174,7 +175,19 @@ button:hover {
     -o-transition: all 1s linear;
 }
 
-.username-validation,.password-validation {
+.input-field {
+    position: relative;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    margin: 20px 0 35px;
+}
+
+.username-validation,
+.password-validation {
     color: red;
     display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    /* font-size: 13px; */
+    white-space: nowrap;
 }
